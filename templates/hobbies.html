@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+My hobbies
+{% endblock %}
+{% block body %}
+<p><h4>I am huge fan of tennis (both single and double), bike and skiing.</h4></p>
+<div class="d-md-flex flex-md-equal w-100 my-md-1 ps-md-1">
+    <div class="bg-ivory me-md-1 pt-1 px-1 pt-md-1 px-md-1 text-center overflow-hidden">
+      <div class="my-0 p-0">
+        <h2 class="display-5">Skiing</h2>
+        <p class="lead">Ski park, Ural mountains</p>
+      </div>
+      <div> <img src="/static/ski.jpg" style="width: 350px; height: 450px; border-radius: 20px"></div>
+    </div>
+    <div class="bg-ivory me-md-1 pt-1 px-1 pt-md-1 px-md-1 text-center overflow-hidden">
+      <div class="my-0 py-0">
+        <h2 class="display-5">Tennis</h2>
+        <p class="lead">Park courts, Moscow</p>
+      </div>
+      <div> <img src="/static/tennis.jpg" style="width: 300px; height: 450px; border-radius: 20px"></div>
+    </div>
+    <div class="bg-ivory me-md-1 pt-1 px-1 pt-md-1 px-md-1 text-center overflow-hidden">
+      <div class="my-0 py-0">
+        <h2 class="display-5">Bike</h2>
+        <p class="lead">Bike parade, Moscow</p>
+      </div>
+      <div> <img src="/static/bicycle.jpg" style="width: 600px; height: 450px; border-radius: 20px"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+Welcome!
+{% endblock %}
+{% block body %}
+<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+<style>
+    w {
+    font-family: 'Cinzel Decorative';font-size: 18px;
+}
+    .scale {
+    display: inline-block;
+    overflow: hidden;
+    }
+    .scale img {
+    transition: 0.5s;
+    display: block;
+    }
+    .scale img:hover {
+    transform: scale(1.2);
+    }
+</style>
+<p>My name is <w>Timur Kotelnikov</w>. I'd like to introduce myself. </p>
+<div class="scale"> <img src="/static/me.jpg" class="scale" width="420" height="420"></div>
+<p>This site contains some info about me. Hope you'll like it!</p>
+{% endblock %}
